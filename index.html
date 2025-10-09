@@ -8,14 +8,21 @@
 	<title>Don B</title>
 </head>
 <body>
-<script>
-    let answer = prompt("Password?")
 
-    if (answer === "ShowMeEverything12345") {
-        window.location.replace('./data/thesis-short.pdf')
-    } else {
-        window.location.reload()
-    }
+<a href="coding-by-night.html">Go to coding by night</a>
+<button id="thesis-download-button">Download thesis</button>
+
+<script>
+    let button = document.getElementById('thesis-download-button');
+    button.addEventListener('click', () => {
+        let answer = prompt("Password?")
+
+        if (answer === "ShowMeEverything12345") {
+            window.location.replace('./data/thesis-short.pdf')
+        } else {
+            window.location.reload()
+        }
+    })
 </script>
 </body>
 </html>
