@@ -1,0 +1,80 @@
+/*
+    colors:
+    3D4F5D: mørk
+    EAEBED: lys
+    A3BAC3: lys grå
+    CA895F: kontrast 1
+    A15E49: kontrast 2
+ */
+
+:root {
+    background-color: #3d4f5d;
+    color: #EAEBED;
+    font-family: "Linux Libertine Display", Georgia, serif;
+}
+
+body {
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+a {
+    color: #A3BAC3;
+}
+
+a:hover {
+    color: #A15E49;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    padding-block: 0.3em;
+}
+
+header, footer {
+    background-color: #CA895F;
+    max-width: 100%;
+    padding: 1em;
+    max-height: 3em;
+}
+
+header > h1 {
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+#container {
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    gap: 2rem;
+}
+
+section > ul {
+    list-style: circle;
+}
+
+article ~ hr {
+    margin-block: 3rem;
+}
+
+footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+}
+
+nav {
+    position: sticky;
+}
+
+main article h2, .code-style {
+    font-family: Monaco, monospace;
+}
