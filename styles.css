@@ -8,7 +8,7 @@
  */
 
 :root {
-    background-color: #3d4f5d;
+    background-color: #EAEBED;
     color: #EAEBED;
     font-family: "Linux Libertine Display", Georgia, serif;
 }
@@ -17,12 +17,27 @@ body {
     min-height: 100%;
 }
 
+article {
+    border: 1px solid #A3BAC3;
+    padding: 2em;
+    box-shadow: darkgrey 0.2em 0.2em;
+    background-color: #3d4f5d;
+}
+
+article ~ article {
+    margin-top: 2em;
+}
+
 h1 {
     font-size: 2em;
 }
 
 a {
-    color: #A3BAC3;
+    color: #CA895F;
+}
+
+a:not(.internal-link)::after {
+    content: " (→)";
 }
 
 a:hover {
@@ -50,11 +65,53 @@ header > h1 {
     text-transform: uppercase;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+figure {
+    width: 100%;
+    margin-inline: 0;
+}
+
+figure > figcaption {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@media(width > 40em) {
+    figure {
+        position: relative;
+        margin-left: 2em;
+        margin-top: 0;
+        top: 0;
+        right: 0;
+        width: 12em;
+        float: right;
+    }
+
+    #container {
+        padding: 2rem;
+        width: 70%;
+    }
+}
+
+figure img {
+    width: 100%;
+    background-color: #EAEBED;
+    border-radius: 6em;
+}
+
+figure img:hover {
+    transform: scaleX(-1);
+}
+
 #container {
-    padding: 2rem;
-    width: 70%;
+    padding: 1em;
     margin: auto;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 section > ul {
