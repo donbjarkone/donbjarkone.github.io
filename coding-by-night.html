@@ -90,7 +90,7 @@
             </section>
             <section>
                 <h3>Tilmelding</h3>
-                <p><a href="https://docs.google.com/spreadsheets/d/1LLvtq2gM2eOyPR1_VEnholwbaZBuGnNywPfmlGxDD7M/edit?usp=sharing" target="_blank">Tilmelding via Google Sheets</a>. Husk at udfylde alle punkter.</p>
+                <p><a id="sign-up-v1-link" href="javascript:void(0)" target="_blank">Tilmelding via Google Sheets</a>. Husk at udfylde alle punkter.</p>
                 <p>Max 20 deltagere. Tilmeldingsfrist 26/10 2025.</p>
             </section>
         </article>
@@ -135,7 +135,7 @@
             </section>
             <section>
                 <h3>Tilmelding</h3>
-                <p><a href="https://docs.google.com/spreadsheets/d/1mKQRjDSQrXWOrVWnRzL-NFUZwlsxTDJL0zhbs46J3T8/edit?usp=sharing" target="_blank">Tilmelding via Google Sheets</a>. Husk at udfylde alle punkter.</p>
+                <p><a id="sign-up-v2-link" href="javascript:void(0)" target="_blank">Tilmelding via Google Sheets</a>. Husk at udfylde alle punkter.</p>
                 <p>Max 20 deltagere. Tilmeldingsfrist 9/11 2025.</p>
             </section>
         </article>
@@ -144,6 +144,18 @@
 <footer>
     <p>Bjarke Vognstrup Fog // 2025</p>
 </footer>
+
+<script>
+    const v1SignupSheet = "1LLvtq2gM2eOyPR1_VEnholwbaZBuGnNywPfmlGxDD7M";
+    document.getElementById('sign-up-v1-link').addEventListener('click', (e) => {
+        e.target.href = `https://docs.google.com/spreadsheets/d/${v1SignupSheet}`
+    });
+
+    const v2SignupSheet = "1mKQRjDSQrXWOrVWnRzL-NFUZwlsxTDJL0zhbs46J3T8";
+    document.getElementById('sign-up-v2-link').addEventListener('click', (e) => {
+        e.target.href = `https://docs.google.com/spreadsheets/d/${v2SignupSheet}`
+    });
+</script>
 
 </body>
 </html>
