@@ -52,13 +52,44 @@
             <h2>Ressourcer</h2>
             <section>
                 <h3>Moderne web</h3>
-                <p>[mere følger]</p>
+                <p>Her er et kort overblik over nogle udvalgte aspekter af moderne webudvikling:</p>
+                <dl>
+                    <dt><a target="_blank" href="https://web.dev/learn/html/semantic-html/">Semantisk HTML</a></dt>
+                    <dd>Brugen af semantiske tags (fx <code>header</code>, <code>main</code> & <code>footer</code>) frem for generelle tags (fx <code>div</code>).</dd>
+                    <dt><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility (a11y)</a></dt>
+                    <dd>Design for mange typer mennesker med fokus på tilgængelighed, fx <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank">ARIA-attributter</a> og semantiske tags, som gør det lettere for skærmlæsere.</dd>
+                    <dt><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design">Responsivt design (<em>mobile-first</em>)</a></dt>
+                    <dd>Design af websider, som egner sig til alle størrelser skærme. Gøres fx ved hjælp af relative størrelser (fx <em>em</em> eller <code>vh</code>) frem for absolutte (fx <code>px</code>) eller brugen af <em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries" target="_blank">CSS media queries</a></em> til at variere styling afhængig af fx skærmstørrelse.</dd>
+                    <dt><a href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement" target="_blank">Progressive enhancement</a></dt>
+                    <dd>Fokus på at designe en simpel base (HTML), som virker for alle, og så kan man tilføje mere avancerede features (CSS og JavaScript) "ovenpå".</dd>
+                </dl>
+                <h4>Udvalgte links</h4>
+                <ul>
+                    <li><a target="_blank" href="https://sustainablewebdesign.org/guidelines/3-5-ensure-your-solutions-are-accessible/">https://sustainablewebdesign.org/guidelines/3-5-ensure-your-solutions-are-accessible/</a></li>
+                    <li><a target="_blank" href="https://www.reddit.com/r/webdev/comments/mfnxnj/why_your_website_should_work_without_javascript/">https://www.reddit.com/r/webdev/comments/mfnxnj/why_your_website_should_work_without_javascript/</a></li>
+                </ul>
+
+                <h4>Moderne CSS</h4>
+                <ul>
+                    <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox">Flexbox</a></li>
+                    <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout">Grid layout</a></li>
+                    <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">Media queries</a></li>
+                </ul>
+
             </section>
             <section>
-                <h3>CSS frameworks</h3>
+                <h3>CSS-frameworks</h3>
+                <p>CSS-frameworks er en slags "færdigbagt" CSS, som kan integreres ind i et projekt. Typisk fungerer de ved at opsætte et basalt layout samt definere en række CSS-klasser, som kan bruges overalt.</p>
+                <p>Typisk bruges CSS-frameworks til følgende:</p>
                 <ul>
-                    <li>Pure.css (https://pure-css.github.io/)</li>
-                    <li>[mere følger]</li>
+                    <li>Responsiv CSS gennem brug af klasser. Denne eksempelkode (Bootstrap) sætter, at der skal være en venstre margen på store skærme (laptop), men ingen på små (mobil): <code>&lt;main class="mb-0 mb-lg-5"&gt;</code>. Det kunne man også selv gøre vha. CSS <em>media queries</em>, men frameworket har på forhånd defineret klasser til det.</li>
+                    <li>Grid-baseret kolonnesystem, hvor man kan definere bredden af elementer som en ratio, fx 1/5 eller 3/12 af den mulige bredde. Gør det nemt at lave flot layout.</li>
+                </ul>
+                <p>Denne side bruger Pure.css til at definere styling for <a target="_blank" href="https://pure-css.github.io/tables/">tabellen</a> ovenfor. Prøv selv at kigge i kildekoden.</p>
+                <h4>Udvalgte CSS-frameworks</h4>
+                <ul>
+                    <li><a target="_blank" href="https://pure-css.github.io/">Pure.css</a>: Et minimalt framework, som kun fylder 3,5 kb</li>
+                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap</a>: Et noget mere omfattende framework, som kan en del mere.</li>
                 </ul>
             </section>
 

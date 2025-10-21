@@ -98,6 +98,24 @@ figure > figcaption {
     }
 }
 
+dl {
+    margin-left: 3em;
+}
+
+dt {
+    font-style: italic;
+}
+
+dd ~ dt {
+    margin-top: 0.7em;
+}
+
+article code {
+    background-color: #EAEBED;
+    color: #3d4f5d;
+    padding-inline: 0.3em;
+}
+
 figure img {
     width: 100%;
     background-color: #EAEBED;
