@@ -17,7 +17,7 @@ body {
     min-height: 100%;
 }
 
-article {
+article, nav {
     border: 1px solid #A3BAC3;
     padding: 2em;
     box-shadow: darkgrey 0.2em 0.2em;
